@@ -39,8 +39,7 @@ public class ItemTractor extends Item {
 
             if (playerIn.canPlayerEdit(pos, facing, stack))
             {
-		    //Oprava
-            	if (!worldIn.isRemote())
+            	if (!worldIn.isRemote)
             	{
             		Entity entity = new EntityTractor(worldIn);
             		entity.setPosition(pos.getX(), pos.getY(), pos.getZ());
